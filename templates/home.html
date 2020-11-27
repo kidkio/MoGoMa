@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrated Job Scrapper</title>
 </head>
 <body>
-    <form>
-        <input type="file" accept="image/*,.txt" required capture='environment' onchange='this.value'/>
+    <form action="/download" method="POST" enctype="multipart/form-data">
+        <input type="file" accept="image/*,.txt" required capture='environment' name="file" onchange='this.value'/>
         <input type="submit"/>
     </form>
 </body>
